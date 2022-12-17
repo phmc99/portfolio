@@ -1,18 +1,18 @@
 
 export const repositories = [
   {
+    name: "IP Address Tracker",
+    language: "Typescript",
+    description: "🌎 Aplicação que mostra em um mapa, dados de um IP ou domínio",
+    git_url: "https://github.com/phmc99/ip-address-tracker",
+    homepage: "https://ip-address-tracker-phmc99.vercel.app/"
+  },
+  {
     name: "Yumi Store",
     language: "Typescript",
     description: "🐶 🐱 E-commerce de produtos para pets.",
     git_url: "https://github.com/phmc99/yumi-store",
     homepage: "https://yumi-store.vercel.app/"
-  },
-  {
-    name: "Buscador de CEP",
-    language: "Typescript",
-    description: "🌎 Aplicação Fullstack que faz uma busca aos dados de um CEP informado.",
-    git_url: "https://github.com/phmc99/rededor-cep",
-    homepage: "https://rededor-cep.herokuapp.com/"
   },
   {
     name: "Meu Bairro API",

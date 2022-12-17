@@ -80,7 +80,7 @@ export const Contacts = () => {
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={`mailto=${userData.emailUser}`}
+                  href={`mailto:${userData.emailUser}`}
                 >
                   Envie um email agora!
                 </Text>
@@ -102,7 +102,7 @@ export const Contacts = () => {
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={userData.linkedinUser}
+                  href={`https://linkedin.com/in/${userData.linkedinUser}`}
                 >
                   Ir para o Linkedin.
                 </Text>
