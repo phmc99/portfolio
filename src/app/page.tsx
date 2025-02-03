@@ -2,22 +2,19 @@ import { marcellus, prata, ubuntu } from "./fonts";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto">
-      <h1 className={ubuntu.className}>Pedro Costa</h1>
-      <p className={prata.className}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-        perferendis expedita nobis. Distinctio qui obcaecati cumque ut corporis.
-        Officia inventore repudiandae alias totam eaque quis dolorum nesciunt
-        quam excepturi sint.
+    <div className="flex flex-col  justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto">
+      <h1 className={`${ubuntu.className} text-left text-4xl`}>Pedro Costa</h1>
+      <p className={`${prata.className} text-lg`}>
+        Resolvendo problemas e construindo o futuro com a tecnologia.
       </p>
-      <p className={marcellus.className}>
-        Click (Generate) to create a new font pairing, (Lock) to lock fonts that
-        you want to keep, and (Edit) to choose a font manually. The text is
-        editable, try replacing it with your company name or other copy. The
-        goal of font pairing is to select fonts that share an overarching theme
-        yet have a pleasing contrast. Which fonts work together is largely a
-        matter of intuition, but we approach this problem with a neural net. See
-        Github for more technical details.
+      <p className={`${marcellus.className} text-base/6`}>
+        <span className="font-bold">
+          Desenvolvedor Full Stack com 4 anos de experiência.
+        </span>{" "}
+        Os setores em que tenho mais conhecimento são <u>e-commerces</u> e{" "}
+        <u>SaaS</u>. Já tive a oportunidade de construir desde o protótipo até a
+        publicação, além de adicionar novas funcionalidades, realizar manutenção
+        e oferecer suporte ao cliente para esses tipos de sistema.
       </p>
     </div>
   );
