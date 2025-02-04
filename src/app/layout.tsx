@@ -20,7 +20,7 @@ export default function RootLayout({
       data-theme={"dark"}
       suppressHydrationWarning
     >
-      <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 px-4 py-20 md:px-16 lg:px-0">
+      <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
         {children}
       </body>
     </html>
