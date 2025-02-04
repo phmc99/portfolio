@@ -6,21 +6,23 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col  justify-center gap-2 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-20 pb-10 md:px-16 lg:px-0">
+      <section className="flex flex-col justify-center gap-2 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-20 pb-10 md:px-16 lg:px-0">
         <h1 className={`${marcellus.className} text-2xl md:text-3xl`}>
           Pedro Costa
         </h1>
-        <p className={`${prata.className} text-sm md:text-base text-zinc-500`}>
+        <p className={`${prata.className} text-sm md:text-base text-zinc-400`}>
           Resolvendo problemas e construindo o futuro com a tecnologia.
         </p>
         <p className={`${ubuntu.className} text-sm/6 md:text-base/6 mt-4`}>
           <span className="font-bold">
             Desenvolvedor Full Stack com 4 anos de experiência.
           </span>{" "}
-          Os setores em que tenho mais conhecimento são <u>e-commerces</u> e{" "}
-          <u>SaaS</u>. Já tive a oportunidade de construir desde o protótipo até
-          a publicação, além de adicionar novas funcionalidades, realizar
-          manutenção e oferecer suporte ao cliente para esses tipos de sistema.
+          Os setores em que tenho mais conhecimento são{" "}
+          <u className="decoration-zinc-600">e-commerces</u> e{" "}
+          <u className="decoration-zinc-600">SaaS</u>. Já tive a oportunidade de
+          construir desde o protótipo até a publicação, além de adicionar novas
+          funcionalidades, realizar manutenção e oferecer suporte ao cliente
+          para esses tipos de sistema.
         </p>
       </section>
 
@@ -34,7 +36,7 @@ export default function Home() {
           Procurando desenvolver minhas habilidades resolvendo problemas,
           explorando tecnologias e interesses, entregando isso com qualidade.
           Sabendo que{" "}
-          <span className={`underline underline-offset-4`}>
+          <span className={`underline underline-offset-4 decoration-zinc-600`}>
             tudo ao meu redor é o trabalho da vida de alguém
           </span>
           .
@@ -63,7 +65,7 @@ export default function Home() {
         <p className={`${ubuntu.className} text-sm md:text-base`}>
           Entre em contato comigo pelo{" "}
           <Link
-            className="underline "
+            className="underline underline-offset-2 decoration-zinc-600"
             href={"https://www.linkedin.com/in/phmc99/"}
             target="__blank"
           >
@@ -71,7 +73,7 @@ export default function Home() {
           </Link>{" "}
           ou{" "}
           <Link
-            className="underline "
+            className="underline underline-offset-2 decoration-zinc-600"
             href={"https://x.com/pedrocostv"}
             target="__blank"
           >

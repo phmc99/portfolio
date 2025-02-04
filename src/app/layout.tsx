@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { marcellus } from "./fonts";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Pedro Costa",
@@ -22,6 +23,8 @@ export default function RootLayout({
     >
       <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
         {children}
+
+        <Footer />
       </body>
     </html>
   );
