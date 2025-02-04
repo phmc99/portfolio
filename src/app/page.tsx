@@ -1,6 +1,7 @@
 import ColumnScroller from "@/components/ColumnScroller";
 import { marcellus, prata, ubuntu } from "./fonts";
 import Craft from "@/components/Craft";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
           Procurando desenvolver minhas habilidades resolvendo problemas,
           explorando tecnologias e interesses, entregando isso com qualidade.
           Sabendo que{" "}
-          <span className={`${prata.className} underline underline-offset-4`}>
+          <span className={`underline underline-offset-4`}>
             tudo ao meu redor é o trabalho da vida de alguém
           </span>
           .
@@ -52,6 +53,30 @@ export default function Home() {
           <span className={`${prata.className} text-zinc-700`}>
             Pratiquem esporte, bebam água e comam bem hahahaha
           </span>
+        </p>
+      </section>
+
+      <section className="flex flex-col  justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-4 pb-10 md:px-16 lg:px-0">
+        <h3 className={`${marcellus.className} text-lg md:text-xl`}>
+          Conecte-se
+        </h3>
+        <p className={`${ubuntu.className} text-sm md:text-base`}>
+          Entre em contato comigo pelo{" "}
+          <Link
+            className="underline "
+            href={"https://www.linkedin.com/in/phmc99/"}
+            target="__blank"
+          >
+            LinkedIn
+          </Link>{" "}
+          ou{" "}
+          <Link
+            className="underline "
+            href={"https://x.com/pedrocostv"}
+            target="__blank"
+          >
+            X
+          </Link>
         </p>
       </section>
     </main>
