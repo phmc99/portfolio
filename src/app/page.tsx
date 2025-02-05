@@ -3,6 +3,7 @@ import { marcellus, prata, ubuntu } from "./fonts";
 import Craft from "@/components/Craft";
 import Link from "next/link";
 import Projects from "@/components/Projects";
+import Experiences from "@/components/Experiences";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       </section>
 
       <section className="px-0 lg:w-1/2 max-w-[920px] lg:mx-auto">
-        <ColumnScroller columns={[Craft, Projects, Craft]} />
+        <ColumnScroller columns={[Craft, Projects, Experiences]} />
       </section>
 
       <section className="flex flex-col  justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-20 pb-10 md:px-16 lg:px-0">

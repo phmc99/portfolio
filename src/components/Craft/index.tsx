@@ -9,7 +9,7 @@ export default function Craft() {
         Craft
       </h2>
       <div className="py-0.5"></div>
-      <p className={`${ubuntu.className} text-zinc-400`}>
+      <p className={`${ubuntu.className} text-zinc-400 text-sm`}>
         Pequenas implementações de interfaces e interações
       </p>
     </div>
