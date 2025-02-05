@@ -12,21 +12,6 @@ export default function Craft() {
       <p className={`${ubuntu.className} text-zinc-400`}>
         Pequenas implementações de interfaces e interações
       </p>
-      <p className={`${ubuntu.className} text-zinc-400`}>
-        Pequenas implementações de interfaces e interações
-      </p>
-      <p className={`${ubuntu.className} text-zinc-400`}>
-        Pequenas implementações de interfaces e interações
-      </p>
-      <p className={`${ubuntu.className} text-zinc-400`}>
-        Pequenas implementações de interfaces e interações
-      </p>
-      <p className={`${ubuntu.className} text-zinc-400`}>
-        Pequenas implementações de interfaces e interações
-      </p>
-      <p className={`${ubuntu.className} text-zinc-400`}>
-        Pequenas implementações de interfaces e interações
-      </p>
     </div>
   );
 }

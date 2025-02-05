@@ -2,6 +2,7 @@ import ColumnScroller from "@/components/ColumnScroller";
 import { marcellus, prata, ubuntu } from "./fonts";
 import Craft from "@/components/Craft";
 import Link from "next/link";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -17,17 +18,15 @@ export default function Home() {
           <span className="font-bold">
             Desenvolvedor Full Stack com 4 anos de experiência.
           </span>{" "}
-          Os setores em que tenho mais conhecimento são{" "}
-          <u className="decoration-zinc-600">e-commerces</u> e{" "}
-          <u className="decoration-zinc-600">SaaS</u>. Já tive a oportunidade de
-          construir desde o protótipo até a publicação, além de adicionar novas
-          funcionalidades, realizar manutenção e oferecer suporte ao cliente
-          para esses tipos de sistema.
+          Os setores em que tenho mais conhecimento são e-commerces e SaaS. Já
+          tive a oportunidade de construir desde o protótipo até a publicação,
+          além de adicionar novas funcionalidades, realizar manutenção e
+          oferecer suporte ao cliente para esses tipos de sistema.
         </p>
       </section>
 
       <section className="px-0 lg:w-1/2 max-w-[920px] lg:mx-auto">
-        <ColumnScroller columns={[Craft, Craft, Craft]} />
+        <ColumnScroller columns={[Craft, Projects, Craft]} />
       </section>
 
       <section className="flex flex-col  justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-20 pb-10 md:px-16 lg:px-0">
