@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import { marcellus } from "./fonts";
@@ -21,9 +22,9 @@ export default function RootLayout({
       data-theme={"dark"}
       suppressHydrationWarning
     >
+      <Analytics />
       <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
         {children}
-
         <Footer />
       </body>
     </html>
