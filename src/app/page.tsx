@@ -4,6 +4,8 @@ import Craft from "@/components/Craft";
 import Link from "next/link";
 import Projects from "@/components/Projects";
 import Experiences from "@/components/Experiences";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -63,23 +65,24 @@ export default function Home() {
           Conecte-se
         </h3>
         <p className={`${ubuntu.className} text-sm md:text-base`}>
-          Entre em contato comigo pelo{" "}
+          Entre em contato comigo:
+        </p>
+        <div className="flex gap-4 items-center">
           <Link
             className="underline underline-offset-2 decoration-zinc-600"
             href={"https://www.linkedin.com/in/phmc99/"}
             target="__blank"
           >
-            LinkedIn
+            <FaLinkedinIn size={22} />
           </Link>{" "}
-          ou{" "}
           <Link
             className="underline underline-offset-2 decoration-zinc-600"
             href={"https://x.com/pedrocostv"}
             target="__blank"
           >
-            X
+            <BsTwitterX size={20} />
           </Link>
-        </p>
+        </div>
       </section>
     </main>
   );
