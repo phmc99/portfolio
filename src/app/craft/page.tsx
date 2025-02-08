@@ -15,17 +15,17 @@ export default function Craft() {
   }
 
   return (
-    <main className="lg:flex">
+    <main className="lg:flex lg:gap-20 lg:w-1/2 max-w-[920px] lg:mx-auto">
       <section className="pt-14 lg:py-14 px-6  pb-10 md:px-16 lg:px-0">
         <div
-          className="flex gap-2 items-center text-zinc-400"
+          className="flex gap-2 items-center text-zinc-400 cursor-pointer"
           onClick={handleBackToHome}
         >
           <TbArrowBackUp size={20} />
           <p className={`${prata.className}`}>Home</p>
         </div>
       </section>
-      <section className="flex flex-col lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-4 pb-10 md:px-16 lg:px-0">
+      <section className="flex flex-col px-6 pt-4 lg:pt-14 pb-10 md:px-16 lg:px-0">
         <div className="pb-14">
           <h2 className="text-lg">Craft</h2>
           <div className="py-0.5"></div>
@@ -33,7 +33,7 @@ export default function Craft() {
             Pequenas implementações de interfaces e interações
           </p>
         </div>
-        <ColumnScroller columns={[Projects, Experiences]} />
+        <ColumnScroller columns={[Projects, Experiences, Experiences]} />
       </section>
     </main>
   );
