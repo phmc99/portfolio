@@ -15,7 +15,7 @@ export default function Craft() {
   }
 
   return (
-    <main className="lg:flex lg:gap-20 lg:w-1/2 max-w-[920px] lg:mx-auto">
+    <main className="h-[94vh] lg:flex lg:gap-20 lg:w-1/2 max-w-[920px] lg:mx-auto">
       <section className="pt-14 lg:py-14 px-6  pb-10 md:px-16 lg:px-0">
         <div
           className="flex gap-2 items-center text-zinc-400 cursor-pointer"

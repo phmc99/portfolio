@@ -23,8 +23,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <Analytics />
-      <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+      <body className="relative bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
         {children}
+        <div className="pb-12"></div>
         <Footer />
       </body>
     </html>
