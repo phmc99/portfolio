@@ -5,7 +5,9 @@ export default function Craft() {
   return (
     <ColumnScrollerListItem title="Construindo">
       <ColumnScrollerItem
-        isLink={false}
+        isLink={true}
+        href="/craft"
+        target="_self"
         title="Craft"
         description="Pequenas implementações de interfaces e interações"
       />

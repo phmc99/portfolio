@@ -6,6 +6,7 @@ interface IColumnScrollerItem {
   isLink: boolean;
   href?: string;
   title: string;
+  target?: string;
   description: string;
 }
 
@@ -13,6 +14,7 @@ export default function ColumnScrollerItem({
   isLink,
   href,
   title,
+  target = "_blank",
   description,
 }: IColumnScrollerItem) {
   return (
@@ -22,12 +24,14 @@ export default function ColumnScrollerItem({
         <div className="flex items-center gap-1">
           <Link
             href={href || "#"}
-            target="__blank"
+            target={target}
             className="text-lg underline underline-offset-2 decoration-zinc-600"
           >
             {title}
           </Link>
-          <LiaExternalLinkAltSolid className="text-zinc-500" />
+          {target === "_blank" ? (
+            <LiaExternalLinkAltSolid className="text-zinc-500" />
+          ) : null}
         </div>
       ) : (
         <h2 className="text-lg underline underline-offset-2 decoration-zinc-600">
