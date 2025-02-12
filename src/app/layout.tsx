@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { marcellus } from "./fonts";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Pedro Costa",
@@ -23,9 +24,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <Analytics />
-      <body className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+      <body>
         <div className="z-10 fixed top-0 h-20 w-full bg-gradient-to-b from-zinc-900 via-zinc-900/80 to-transparent backdrop-blur-xs"></div>
-        {children}
+        <ThemeProvider attribute={"class"}>
+          <div className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+            {children}
+          </div>
+        </ThemeProvider>
         <div className="pb-12"></div>
         <div className="relative">
           <Footer />
