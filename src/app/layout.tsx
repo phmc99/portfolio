@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
-import { marcellus } from "./fonts";
+import { marcellus, ubuntu } from "./fonts";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
+import LayoutTopFade from "@/components/LayoutTopFade";
 
 export const metadata: Metadata = {
   title: "Pedro Costa",
@@ -25,16 +26,18 @@ export default function RootLayout({
     >
       <Analytics />
       <body>
-        <div className="z-10 fixed top-0 h-20 w-full bg-gradient-to-b from-zinc-900 via-zinc-900/80 to-transparent backdrop-blur-xs"></div>
         <ThemeProvider attribute={"class"}>
-          <div className="bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+          <LayoutTopFade />
+          <div
+            className={`${ubuntu.className} bg-zinc-200 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100`}
+          >
             {children}
           </div>
+          <div className="pb-12"></div>
+          <div className="relative">
+            <Footer />
+          </div>
         </ThemeProvider>
-        <div className="pb-12"></div>
-        <div className="relative">
-          <Footer />
-        </div>
       </body>
     </html>
   );

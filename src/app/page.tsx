@@ -1,5 +1,5 @@
 import ColumnScroller from "@/components/ColumnScroller";
-import { marcellus, prata, ubuntu } from "./fonts";
+import { marcellus } from "./fonts";
 import Craft from "@/components/Craft";
 import Link from "next/link";
 import Projects from "@/components/Projects";
@@ -31,11 +31,11 @@ export default function Home() {
               Pedro Costa
             </h1>
             <p
-              className={`${prata.className} text-sm md:text-base text-zinc-400`}
+              className={`text-sm md:text-base text-zinc-500 dark:text-zinc-400`}
             >
               Resolvendo problemas e construindo o futuro com a tecnologia.
             </p>
-            <p className={`${ubuntu.className} text-sm/6 md:text-base/6 mt-4`}>
+            <p className={`text-sm/6 md:text-base/6 mt-4`}>
               <span className="font-bold">
                 Desenvolvedor Full Stack com 4 anos de experiência.
               </span>{" "}
@@ -57,7 +57,7 @@ export default function Home() {
         <h3 className={`${marcellus.className} text-lg md:text-xl`}>
           Detalhes
         </h3>
-        <p className={`${ubuntu.className} text-sm/6 md:text-base/6`}>
+        <p className={`text-sm/6 md:text-base/6`}>
           Procurando desenvolver minhas habilidades resolvendo problemas,
           explorando tecnologias e interesses, entregando isso com qualidade.
           Sabendo que{" "}
@@ -66,18 +66,18 @@ export default function Home() {
           </span>
           .
         </p>
-        <p className={`${ubuntu.className} text-sm md:text-base`}>
+        <p className={`text-sm md:text-base`}>
           Tudo que eu quero é construir e melhorar sistemas. APIs, Front-ends,
           Webhooks, Apps, etc. A programação tem infinitas oportunidades de
           criar e sinto que ainda tenho muita coisa para experimentar.
         </p>
-        <p className={`${ubuntu.className} text-sm/6 md:text-base/6`}>
+        <p className={`text-sm/6 md:text-base/6`}>
           Um pouco sobre mim. Sou praticante de Jiu-jitsu e Judô, já fui
           competidor de ambos por algum tempo, também tive uma fase como
           professor e gosto bastante da filosofia por trás dessas artes. Também
           gosto de musculação, considero um complemento aos meus treinos de luta
           e me sinto bem ao fazer.{" "}
-          <span className={`${prata.className} text-zinc-700`}>
+          <span className={`text-zinc-400 dark:text-zinc-700`}>
             Pratiquem esporte, bebam água e comam bem hahahaha
           </span>
         </p>
@@ -87,9 +87,7 @@ export default function Home() {
         <h3 className={`${marcellus.className} text-lg md:text-xl`}>
           Conecte-se
         </h3>
-        <p className={`${ubuntu.className} text-sm md:text-base`}>
-          Entre em contato comigo:
-        </p>
+        <p className={`text-sm md:text-base`}>Entre em contato comigo:</p>
         <div className="flex gap-4 items-center">
           <Link
             className="underline underline-offset-2 decoration-zinc-600"
