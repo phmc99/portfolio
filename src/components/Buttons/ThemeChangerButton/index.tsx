@@ -1,15 +1,26 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { LuMoonStar } from "react-icons/lu";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const ThemeChangerButton = () => {
   const { theme, setTheme } = useTheme();
 
+  const iconByTheme = theme === "light" ? <MdOutlineWbSunny /> : <LuMoonStar />;
+
+  function handleChangeTheme() {
+    if (theme === "dark") {
+      return setTheme("light");
+    }
+    return setTheme("dark");
+  }
+
   return (
-    <div className="flex flex-col">
-      The current theme is: {theme}
-      <button onClick={() => setTheme("light")}>Light Mode</button>
-      <button onClick={() => setTheme("dark")}>Dark Mode</button>
+    <div className="w-16 flex justify-center ">
+      <button onClick={handleChangeTheme} className="text-2xl lg:4xl">
+        {iconByTheme}
+      </button>
     </div>
   );
 };
