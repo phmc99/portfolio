@@ -7,13 +7,13 @@ import Experiences from "@/components/Experiences";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import Image from "next/image";
-import ThemeChangerButton from "@/components/Buttons/ThemeChangerButton";
+import SideMenuHome from "@/components/SideMenu/SideMenuHome";
 
 export default function Home() {
   return (
     <main>
+      <SideMenuHome />
       <section className="flex flex-col justify-center gap-2 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-20 pb-10 md:px-16 lg:px-0">
-        <ThemeChangerButton />
         <div className="flex gap-4">
           <figure className="hidden lg:block">
             <Image
