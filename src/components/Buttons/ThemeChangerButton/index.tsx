@@ -7,7 +7,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 const ThemeChangerButton = () => {
   const { theme, setTheme } = useTheme();
 
-  const iconByTheme = theme === "light" ? <MdOutlineWbSunny /> : <LuMoonStar />;
+  const iconByTheme = theme === "light" ? <LuMoonStar /> : <MdOutlineWbSunny />;
 
   function handleChangeTheme() {
     if (theme === "dark") {

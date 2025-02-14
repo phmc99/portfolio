@@ -58,8 +58,8 @@ export default function Home() {
           Detalhes
         </h3>
         <p className={`text-sm/6 md:text-base/6`}>
-          Procurando desenvolver minhas habilidades resolvendo problemas,
-          explorando tecnologias e interesses, entregando isso com qualidade.
+          Estou procurando desenvolver minhas habilidades resolvendo problemas,
+          explorando várias tecnologias e entregando valor por onde passo.
           Sabendo que{" "}
           <span className={`underline underline-offset-4 decoration-zinc-600`}>
             tudo ao meu redor é o trabalho da vida de alguém
@@ -69,9 +69,10 @@ export default function Home() {
         <p className={`text-sm md:text-base`}>
           Tudo que eu quero é construir e melhorar sistemas. APIs, Front-ends,
           Webhooks, Apps, etc. A programação tem infinitas oportunidades de
-          criar e sinto que ainda tenho muita coisa para experimentar.
+          criar e sinto que ainda tenho muita coisa para experimentar e
+          aprender.
         </p>
-        <p className={`text-sm/6 md:text-base/6`}>
+        {/* <p className={`text-sm/6 md:text-base/6`}>
           Um pouco sobre mim. Sou praticante de Jiu-jitsu e Judô, já fui
           competidor de ambos por algum tempo, também tive uma fase como
           professor e gosto bastante da filosofia por trás dessas artes. Também
@@ -80,7 +81,7 @@ export default function Home() {
           <span className={`text-zinc-400 dark:text-zinc-700`}>
             Pratiquem esporte, bebam água e comam bem hahahaha
           </span>
-        </p>
+        </p> */}
       </section>
 
       <section className="flex flex-col  justify-center gap-4 lg:w-1/2 max-w-[920px] lg:mx-auto px-6 pt-4 pb-10 md:px-16 lg:px-0">

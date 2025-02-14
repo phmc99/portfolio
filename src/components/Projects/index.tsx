@@ -8,9 +8,9 @@ export default function Projects() {
         isLink={true}
         href="https://github.com/phmc99/find-a-friend"
         title="Rest API"
-        description="API conta com CRUD, Autenticação JWT, Testes unitários, ORM, Design
+        description="API conta com CRUD, Autenticação JWT, Testes unitários, ORM, SOLID, Design
         Patterns e muito mais. A interação dela é entre organizações e pets para
-        adoção."
+        adoção em locais próximos."
       />
 
       <ColumnScrollerItem
