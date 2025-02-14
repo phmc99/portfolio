@@ -39,7 +39,9 @@ export default function ColumnScrollerItem({
         </h2>
       )}
       <div className="py-0.5"></div>
-      <p className={`${ubuntu.className} text-zinc-400 text-sm`}>
+      <p
+        className={`${ubuntu.className} text-zinc-500 dark:text-zinc-400 text-sm`}
+      >
         {description}
       </p>
     </>
